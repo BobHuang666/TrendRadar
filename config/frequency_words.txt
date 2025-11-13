@@ -2,23 +2,35 @@
 内娱
 韩娱
 RED组合
+RED女团
 张艺兴
 EXO
 NCT
 威神V
 SM公司
-
-DeepSeek
-deepmind
-gemini
-chatgpt
-sora
-claude
-trae
+回归
+出道
+演唱会
+POP
+音乐节
 
 前端
 招聘
+岗位
+薪资
+投递
+刷题
+HC
+程序员
 
+DeepSeek
+DeepMind
+Gemini
+ChatGPT
+Sora
+Claude
+Trae
+OpenAI
 
 华为
 鸿蒙
@@ -39,3 +51,4 @@ ai
 自动驾驶
 机器人
 科技
+测评
