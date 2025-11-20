@@ -42,7 +42,7 @@ notification:
   #   - 只想在工作日白天接收推送（如 09:00-18:00）
   #   - 希望在晚上固定时间收到汇总（如 20:00-22:00）
   push_window:
-    enabled: true  # 是否启用推送时间窗口控制，默认关闭
+    enabled: false  # 是否启用推送时间窗口控制，默认关闭
     # 注意：GitHub Actions 执行时间不稳定，时间范围建议至少留足 2 小时
     # 如果想要精准的定时推送，建议使用 Docker 部署在个人服务器上
     time_range:
@@ -84,19 +84,10 @@ platforms:
     name: "抖音"
   - id: "bilibili-hot-search"
     name: "bilibili 热搜"
-  - id: "tieba"
-    name: "贴吧"
   - id: "zhihu"
     name: "知乎"
   # === 科技类平台 ===
   - id: "juejin"
     name: "掘金"
-  - id: "solidot"
-    name: "Solidot"
-  - id: "v2ex"
-    name: "V2EX"
   - id: "nowcoder"
     name: "牛客网"
-  # === 其他/工具类 ===
-  - id: "chongbuluo"
-    name: "虫部落"
