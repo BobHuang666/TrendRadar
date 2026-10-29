@@ -85,7 +85,7 @@ platforms:
 # max_age_days: 可选，覆盖全局 freshness_filter.max_age_days
 # ===============================================================
 rss:
-  enabled: true                       # 是否启用 RSS 抓取
+  enabled: false                      # 是否启用 RSS 抓取（false=不抓取 RSS）
 
   # 文章新鲜度过滤配置（全局默认值）
   # 过滤掉发布时间超过指定天数的旧文章，避免同一篇文章重复出现在推送中
@@ -260,7 +260,7 @@ display:
   regions:
     new_items: false # 新增热点区域（含热榜新增 + RSS 新增）
     hotlist: true # 热榜区域（关键词匹配 / AI 智能筛选）
-    rss: true # RSS 订阅区域
+    rss: false # RSS 订阅区域（已关闭 RSS 抓取）
     standalone: false # 独立展示区（完整热榜/RSS，不受关键词过滤）
     ai_analysis: true # AI 分析区域
   standalone:
@@ -531,7 +531,7 @@ ai_translation:
   # 如果 display.regions 关闭了显示，那么这边即使开启了也不会翻译
   scope:
     hotlist: false                  # 热榜区域
-    rss: true                      # RSS 区域
+    rss: false                     # RSS 区域（已关闭 RSS 抓取）
     standalone: true               # 独立展示区
 
 
