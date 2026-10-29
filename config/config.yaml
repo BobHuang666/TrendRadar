@@ -179,7 +179,7 @@ report:
 # 5) 这里决定“筛选路径”，不决定 AI 模型（模型在 ai 段）
 # ===============================================================
 filter:
-  method: "ai"                     # 可选: keyword | ai
+  method: "keyword"                 # 可选: keyword | ai
 
   # AI 模式标签排序开关（仅 ai 模式生效）
   # true: 按标签优先级排序（来自兴趣描述提取顺序）
@@ -259,10 +259,10 @@ display:
     - ai_analysis                       # 5️⃣ AI 分析区域
   regions:
     new_items: false # 新增热点区域（含热榜新增 + RSS 新增）
-    hotlist: false # 热榜区域（关键词匹配 / AI 智能筛选）
-    rss: false # RSS 订阅区域
+    hotlist: true # 热榜区域（关键词匹配 / AI 智能筛选）
+    rss: true # RSS 订阅区域
     standalone: false # 独立展示区（完整热榜/RSS，不受关键词过滤）
-    ai_analysis: false # AI 分析区域
+    ai_analysis: true # AI 分析区域
   standalone:
     platforms: ["bilibili-hot-search","douyin","weibo","zhihu"] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
     rss_feeds: []                     # RSS 源 ID 列表（如 ["hacker-news"]）
